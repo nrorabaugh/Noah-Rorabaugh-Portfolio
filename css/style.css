@@ -1,0 +1,43 @@
+h1 {
+    font-size: 66px;
+    font-family: "Gloria Hallelujah";
+    text-align: center;
+    color: orangered
+}
+nav {
+    margin: 0;
+}
+nav ul {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-around;
+    list-style: none;
+    padding: 10px;
+    margin: 0;
+    width: 100%;
+    background-color: pink;
+}
+li a {
+    font-family: "Exo 2";
+    font-size: 22px;
+    text-decoration: none;
+    color: rgb(73, 62, 19);
+    padding: 10px;
+}
+li a:hover {
+    color: orangered;
+    background-color: rgb(90, 0, 90);
+}
+body{
+    background-color: rgb(200, 230, 200);
+    margin: 0;
+}
+img {
+    display: block;
+    margin: 0 auto;
+    width: 20%;
+    height: auto;
+    border: solid rgb(180, 180, 180) 15px;
+    border-radius: 8px;
+}
