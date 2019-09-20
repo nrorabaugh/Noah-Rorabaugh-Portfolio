@@ -40,4 +40,8 @@ img {
     height: auto;
     border: solid rgb(180, 180, 180) 15px;
     border-radius: 8px;
+    box-shadow: 8px 8px 7px rgba(100, 100, 100, 0.6);
+}
+.here {
+    background-color: rgb(255, 151, 151);
 }
