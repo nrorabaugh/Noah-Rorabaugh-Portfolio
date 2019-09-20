@@ -1,6 +1,6 @@
 h1 {
     font-size: 66px;
-    font-family: "Gloria Hallelujah";
+    font-family: "Gloria Hallelujah", Helvetica, sans-serif;
     text-align: center;
     color: orangered
 }
@@ -19,7 +19,7 @@ nav ul {
     background-color: pink;
 }
 li a {
-    font-family: "Exo 2";
+    font-family: "Exo 2", sans-serif;
     font-size: 22px;
     text-decoration: none;
     color: rgb(73, 62, 19);
@@ -44,4 +44,12 @@ img {
 }
 .here {
     background-color: rgb(255, 151, 151);
+}
+p{
+    font-family: "Exo 2", sans-serif;
+    font-size: 20px;
+    line-height: 1.5;
+    color: orangered;
+    width: 32%;
+    margin: 0 auto;
 }
