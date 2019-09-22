@@ -1,11 +1,18 @@
 h1 {
     font-size: 66px;
-    font-family: "Gloria Hallelujah", Helvetica, sans-serif;
+    font-family: "Gloria Hallelujah", cursive, sans-serif;
     text-align: center;
-    color: orangered
+    color: rgb(255, 104, 96);
+    font-weight: 100;
+    margin: 0;
+}
+div.a {
+    transform: rotate(-5deg);
+    padding: 60px 0 60px 0;
 }
 nav {
     margin: 0;
+    width: 100%;
 }
 nav ul {
     display: flex;
@@ -17,6 +24,12 @@ nav ul {
     margin: 0;
     width: 100%;
     background-color: pink;
+    position: fixed;
+    z-index: 1;
+}
+li {
+    padding: 0;
+    margin: 0;
 }
 li a {
     font-family: "Exo 2", sans-serif;
@@ -26,8 +39,8 @@ li a {
     padding: 10px;
 }
 li a:hover {
-    color: orangered;
     background-color: rgb(90, 0, 90);
+    color: orangered;
 }
 body{
     background-color: rgb(200, 230, 200);
@@ -40,7 +53,7 @@ img {
     height: auto;
     border: solid rgb(180, 180, 180) 15px;
     border-radius: 8px;
-    box-shadow: 8px 8px 7px rgba(100, 100, 100, 0.6);
+    box-shadow: 0 0 8px 8px rgba(100, 100, 100, 0.6);
 }
 .here {
     background-color: rgb(255, 151, 151);
@@ -52,4 +65,8 @@ p{
     color: orangered;
     width: 32%;
     margin: 0 auto;
+    padding: 0 0 0 60px;
+}
+.N {
+    font-size: 90px;
 }
