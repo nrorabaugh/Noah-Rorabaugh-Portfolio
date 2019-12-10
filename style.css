@@ -39,3 +39,26 @@ body {
         transform: translateX(70vw) translateY(70vh)
     }
 }
+
+.body {
+    width: 50vw;
+    height: 50vh;
+    margin: auto;
+    font-size: 2em;
+    z-index: 1;
+    position: absolute;
+}
+
+.menu {
+    position: absolute;
+    bottom: 60vh;
+    left: 1vw;
+    z-index: 1;
+}
+
+.bar {
+    width: 45px;
+    margin: 8px;
+    height: 6px;
+    background-color: black;
+}
