@@ -2,7 +2,7 @@
     background-image: radial-gradient(circle at center, rgba(255, 255, 0, 0.85) 20%, rgb(100, 150, 255) 70%);
     width: 30vw;
     height: 30vw;
-    animation-name: sun;
+    z-index: -1;
     animation-iteration-count: infinite;
     animation-duration: 10000ms;
     animation-timing-function: linear;
@@ -20,6 +20,7 @@
 body {
     padding: 0;
     margin: 0;
+    overflow: hidden;
 }
 
 @keyframes sun {
@@ -43,17 +44,37 @@ body {
 .body {
     width: 50vw;
     height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    align-content: space-around;
     margin: auto;
     font-size: 2em;
     z-index: 1;
     position: absolute;
 }
 
+.sunRad {
+    background-color: rgba(0,0,0,0);
+    z-index: 0;
+    width: 140vw;
+    height: 30vw;
+    animation-duration: 15000ms;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    margin: 0 0 0 -20vw;
+}
+
 .menu {
-    position: absolute;
-    bottom: 60vh;
+    position: relative;
     left: 1vw;
-    z-index: 1;
+    z-index: 2;
+    top: 8.5vh;
+}
+
+.menu:hover {
+    cursor: pointer;
 }
 
 .bar {
@@ -61,4 +82,144 @@ body {
     margin: 8px;
     height: 6px;
     background-color: black;
+}
+
+.menuWrapper {
+    position: absolute;
+    left: 0;
+    z-index: 2;
+    width: 300px;
+}
+
+.option {
+    transform: rotate(-180deg);
+    transform-origin: center left;
+    background-color: rgba(0,0,0,0);
+    font-size: 22px;
+    z-index: 2;
+    height: 22px;
+    text-align: right;
+    width: 200px;
+    margin-left: 0;
+}
+
+.logo {
+    width: 8vw;
+    margin: 30px;
+}
+
+.option:hover {
+    cursor: pointer;
+}
+
+.text {
+    animation: textMount;
+    font-family: Helvetica;
+    animation-timing-function: linear;
+    animation-duration: 200ms;
+}
+
+.one {
+    animation-duration: 200ms;
+    animation-timing-function: linear;
+}
+
+.two {
+    animation-duration: 200ms;
+    animation-timing-function: linear;
+}
+
+.three {
+    animation-duration: 200ms;
+    animation-timing-function: linear;
+}
+
+.four {
+    animation-duration: 200ms;
+    animation-timing-function: linear;
+}
+
+h1 {
+    font-family: Helvetica;
+    font-weight: 200;
+    font-size: 3em;
+    z-index: 1;
+    position: absolute;
+    top: 18vh;
+    animation-duration: 600ms;
+    animation-timing-function: linear;
+}
+
+#me {
+    width: 18vw;
+    z-index: 1;
+    margin: 0 auto;
+    border: 18px solid rgb(83, 83, 255);
+    border-radius: 50px;
+    position: absolute;
+    animation-timing-function: linear;
+    animation-duration: 600ms;
+}
+
+@keyframes fade {
+    100% {
+        color: rgba(0,0,0,0)
+    }
+}
+
+@keyframes moveImg {
+    100% {
+        width: 9vw;
+        border: 9px solid rgb(83, 83, 255);
+        transform: translateX(43vw) translateY(-38vh);
+        border-radius: 25px;
+    }
+}
+
+@keyframes menu1 {
+    100% {
+        transform: rotate(-18deg)
+    }
+}
+
+@keyframes menu2 {
+    100% {
+        transform: rotate(-6deg)
+    }
+}
+
+@keyframes menu3 {
+    100% {
+        transform: rotate(6deg)
+    }
+}
+
+@keyframes menu4 {
+    100% {
+        transform: rotate(18deg)
+    }
+}
+
+@keyframes collapse {
+    100% {
+        transform: rotate(180deg)
+    }
+}
+
+@keyframes cycle {
+    50% {
+        transform: rotate(90deg);
+    }
+    100% {
+        transform: rotate(180deg);
+    }
+}
+
+@keyframes textMount {
+    0% {
+        color: rgba(0,0,0,0)
+    }
+    100% {
+        color: black
+    }
 }
