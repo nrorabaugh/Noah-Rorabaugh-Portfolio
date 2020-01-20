@@ -1,3 +1,15 @@
+#preload-01 {
+    background: url('./images/chat.png')
+}
+
+#preload-02 {
+    background: url('./images/blackjack.png')
+}
+
+#preload-03 {
+    background: url('./images/store.png')
+}
+
 .sun {
     background-image: radial-gradient(circle at center, rgba(255, 255, 0, 0.85) 20%, rgb(100, 150, 255) 70%);
     width: 30vw;
