@@ -181,11 +181,12 @@ let shift = (which) => {
             let a = document.createElement('a')
             a.setAttribute('href', projects[i].url)
             a.style.margin = '30px'
-            a.style.color = 'black'
+            a.style.color = 'blue'
             a.style.fontFamily = 'Helvetica'
             a.style.textDecoration = 'none'
             let img = document.createElement('img')
             img.setAttribute('src', projects[i].image)
+            img.setAttribute('id', `preload-0${i}`)
             img.style.width = '200px'
             let title = document.createElement('h3')
             title.innerHTML = projects[i].title
