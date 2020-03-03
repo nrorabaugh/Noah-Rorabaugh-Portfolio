@@ -164,7 +164,12 @@ let shift = (which) => {
             image: './images/blackjack.png'
         },
         {
-            title: 'Clothing Store Clone',
+            title: 'Proofreader App',
+            url: 'https://proofreader-app.herokuapp.com/',
+            image: './images/proofreader.png'
+        },
+        {
+            title: 'Shop Clone',
             url: 'https://floating-bayou-99352.herokuapp.com/',
             image: './images/store.png'
         }
